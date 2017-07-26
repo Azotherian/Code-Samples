@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nick Dow's Resume</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+        
+        <!-- favicons-->
+    	<link rel="shortcut icon" href="/favicon.ico">
+    	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+    	<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+    	<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+    	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+    	<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+    	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+    	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+    	<link rel="apple-touch-icon" href="favicon/favicon-57.png">
+    	<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+    	<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+    	<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+    	<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+    	<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+    	<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+    	<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+    	<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+    	<meta name="msapplication-TileColor" content="#FFFFFF">
+    	<meta name="msapplication-TileImage" content="/favicon-144.png">
+    	<meta name="msapplication-config" content="/browserconfig.xml">
+        
+    </head>
+    <body class="fontStyle">
+        <div class="vertiBGround">
+            <img src="images/EasterEgg.png" onclick="toggleVersion()" class="eggDimensions" title="Click here to change between greek and english">
+        </div>
+        <div>
+            <div id="personalInfo" class="titleText" onclick="toggle('personalHide')" title="This section has my name and contact information"></div>
+            <div id="personalHide" hidden = true>
+                <div id="personalAddress" class="personalInfoAlign"></div>
+            </div>
+            <br>
+            <div class="sectionHeading" onclick="toggle('education')" title="This is the section that explains my schooling locations and course work">Education</div>
+            <div id="education" hidden = true>
+                <div>
+                    <span id="jsonDeg" class="sectionTitleFont"></span>
+                    <span id="anticipatedGrad" class="textFloatRight"></span>
+                </div>
+                <div id="uvuInfo"></div>
+                <div>
+                    <ul class="listMargin">
+                        <li>
+                            <span class="bulletFontSize" onclick="toggle('courseWork')" title="This is the course work I have done that is related to my degree">Related Coursework:</span>
+                            <ul class="secondBulletFont" id="courseWork" hidden = true>
+                                <li>
+                                  <span class="subSectionHeading" title="This is the course work related to my programming experience">Programming:</span>
+                                  <span id="programCourseWork"></span>
+                                </li>
+                                <li>
+                                    <span class="subSectionHeading" title="This is the course work I have done in the general CS degree">Computer Science:</span> 
+                                    <span id="csCourseWork"></span>
+                                </li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionHeading" onclick="toggle('skills')" title="My professional skills">Professional Skills</div>
+            <div id="skills" hidden = true>
+                <div>
+                    <span class="sectionTitleFont" onclick="toggle('programmingSkills')" title="My programming skills">Programming</span>
+                </div>
+                <div id="programmingSkills" hidden = true>
+                    <ul class="listMargin secondBulletFont" id="1-1"></ul>
+                </div>
+                <div>
+                    <span class="sectionTitleFont" onclick="toggle('managementSkills')" title="My management skills">Management</span>
+                </div>
+                <div id="managementSkills" hidden = true>
+                    <ul id="2-1" class="listMargin secondBulletFont"></ul>
+                </div>
+                <div>
+                    <span class="sectionTitleFont" onclick="toggle('communicationSkills')" title="My communication skills">Communication</span>
+                </div>
+                <div id="communicationSkills" hidden = true>
+                    <ul class="listMargin secondBulletFont" id="3-1"></ul>
+                </div>
+                <div>
+                    <span class="sectionTitleFont" onclick="toggle('organizationSkills')" title="My organization and training skills">Organization and Training</span>
+                </div>
+                <div>
+                    <div id="organizationSkills" hidden = true>
+                        <ul id="4-1" class="listMargin secondBulletFont"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionHeading" onclick="toggle('experience')" title="My job experience, newes ones show use of degree">Experience</div>
+            <div id="experience" hidden = true>
+                <div>
+                    <span id="1" class="sectionTitleFont"></span>
+                    <span id="04/16" class="textFloatRight"></span>
+                    <div id="84097"></div>
+                </div>
+                <br>
+                <div>
+                    <span id="2" class="sectionTitleFont"></span>
+                    <span id="03/15-12/15" class="textFloatRight"></span>
+                    <div id="84020"></div>
+                </div>
+                <br>
+                <div>
+                    <span id="3" class="sectionTitleFont"></span>
+                    <span id="01/15-03/15" class="textFloatRight"></span>
+                    <div id="84059"></div>
+                </div>
+                <br>
+                <div>
+                    <span id="4" class="sectionTitleFont"></span>
+                    <span id="09/11-01/15" class="textFloatRight"></span>
+                    <div id="84058"></div>
+                </div>
+            </div>
+        </div>
+    <script>
+        var resume = {
+            "personalInfo": {
+                "firstName": "Nick",
+                "lastName": "Dow",
+                "contactInfo": {
+                    "address": {
+                        "city": "Orem",
+                        "state": "UT"
+                    },
+                    "phoneNumber": "435-650-3282",
+                    "email": "azotherian@gmail.com"
+                }
+            },
+            "education": {
+                "degree": "Bachelors of Computer Science",
+                "gradDate": "May 2018",
+                "schoolInfo": {
+                    "school": "Utah Valley University",
+                    "city": "Orem",
+                    "state": "UT",
+                    "relatedCourses": {
+                        "programming": [
+                            "Fundamentals of Programming",
+                            "Object Oriented Programming",
+                            "Operating Systems Theory",
+                            "C++ Software Development",
+                            "Patterns of Software Development"
+                        ],
+                        "computerScience": [
+                            "Discrete Structures",
+                            "Introduction to Algorithms and Data Structures",
+                            "Computer Networks",
+                            "Computer Organization and Architecture",
+                            "Introduction to Algorithms",
+                            "Database Theory",
+                            "Introduction to Computation Theory"
+                        ]
+                    }
+                }
+            },
+            "skills": [{
+                "skillNumber": "1-1",
+                "title": "programming",
+                "skillSet": [
+                    "Proficient with C++, C#, C. Familiar with Java, angularJS and HTML/CSS",
+                    "Designed User Interface changes and applications using Java for a company's product, helped create software that uses an angularJS application to communicate and display data from a Jasper REST server",
+                    "Designed a Virtual Machine that can use multithreading without the threading library, a Stack, a Graph, a Word  Counting program, and more that all fit to professors specifications"
+                ]
+            }, {
+                "skillNumber": "2-1",
+                "title": "management",
+                "skillSet": [
+                    "Supervise a team of nine employees: oversee daily tasks, shift assignments and area coverage",
+                    "Coordinate between team members to increase productivity, identifying key strengths and abilities to match job tasks",
+                    "Utilize time effectively to maintain a standard of duties, resulting in promotion to lead custodian over two buildings"
+                ]
+            }, {
+                "skillNumber": "3-1",
+                "title": "communication",
+                "skillSet": [
+                    "Communicated between team members and manager to ensure project was on track",
+                    "Provide feedback between managers and employees to ensure a standards of cleaning, employee performance, and other general information or instructions",
+                    "Increased employee productivity by effectively relaying instructions, resulting in extra time to focus on ancillary work"
+                ]
+            }, {
+                "skillNumber": "4-1",
+                "title": "organization",
+                "skillSet": [
+                    "Complete tasks in a timely manner and resolve unexpected issues quickly",
+                    "Trained others on how to effectively complete tasks to streamline workflow",
+                    "Quickly learns a new skill and adapt easily to change and improvement"
+                ]
+            }],
+            "experience": [{
+                "companyNumber": "1",
+                "companyDate": "04/16",
+                "companyLoc": "84097",
+                "title": "Software Developer",
+                "company": "PerfectSearch Corp",
+                "workStartDate": "April 2016",
+                "workEndDate": "Present",
+                "location": {
+                    "city": "Orem",
+                    "state": "UT"
+                }
+            }, {
+                "companyNumber": "2",
+                "companyDate": "03/15-12/15",
+                "companyLoc": "84020",
+                "title": "Software Developer",
+                "company": "SuperLumin Networks",
+                "workStartDate": "March 2015",
+                "workEndDate": "December 2015",
+                "location": {
+                    "city": "Draper",
+                    "state": "UT"
+                }
+            }, {
+                "companyNumber": "3",
+                "companyDate": "01/15-03/15",
+                "companyLoc": "84059",
+                "title": "Sandwich Artist",
+                "company": "Subway UVU",
+                "workStartDate": "January 2015",
+                "workEndDate": "March 2015",
+                "location": {
+                    "city": "Orem",
+                    "state": "UT"
+                }
+            }, {
+                "companyNumber": "4",
+                "companyDate": "09/11-01/15",
+                "companyLoc": "84058",
+                "title": "Lead Custodian",
+                "company": "Utah Valley University",
+                "workStartDate": "August 2011",
+                "workEndDate": "January 2015",
+                "location": {
+                    "city": "Orem",
+                    "state": "UT"
+                }
+            }]
+        };
+        window.onload = displayFromJson(resume);
+        var normalVersion = true;
+        let greekWords = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at ex eu turpis lacinia dapibus. Mauris sed porttitor odio, id efficitur nisi. Proin vitae velit iaculis, posuere ante vel, venenatis sem. Integer lorem nulla, tempor id nibh eget, faucibus finibus ante. Pellentesque tempus dictum sapien, quis vulputate enim pharetra sit amet. Nullam nibh lorem, aliquet et ullamcorper in, commodo eget nibh. Suspendisse condimentum massa vel ex varius, a finibus risus rutrum. Vivamus interdum vulputate est, sit amet viverra nisi mattis vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi vel posuere elit, et sagittis ex. Phasellus dictum eu urna tristique porta. Suspendisse efficitur, diam sed porttitor auctor, augue ipsum cursus mi, nec congue neque elit in nisl. Ut a ipsum bibendum, auctor lectus et, feugiat augue. Suspendisse sit amet nulla dapibus, euismod nunc sed, pretium libero. Aenean maximus elit sed lacus accumsan, et ullamcorper ante hendrerit. Aliquam accumsan nunc nulla, non ornare leo semper sed. Etiam tristique scelerisque tincidunt. Nullam venenatis congue mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer neque diam, pulvinar eget accumsan in, hendrerit vel dolor. Suspendisse maximus fringilla ultricies. Donec ac maximus augue. Etiam neque ligula, aliquam eu ligula vel, malesuada sodales lorem. Aenean orci augue, pulvinar sed sodales nec, maximus sit amet ex. Mauris rutrum augue eu magna finibus facilisis. Duis vel ligula enim. Nam non augue orci. Nullam facilisis, nibh eget lacinia dapibus, sem nisl tempus nisi, non consectetur ligula mauris et felis. Suspendisse potenti. Integer convallis ullamcorper molestie. Maecenas sit amet tincidunt velit, nec accumsan erat. Nam at scelerisque augue. Phasellus porta lectus vitae nisi aliquam, quis laoreet tellus tristique. Duis vehicula odio a velit commodo tempus. Duis condimentum, lectus sed tempor imperdiet, velit sem vulputate arcu, et pretium enim ante vitae lorem. Aenean ut hendrerit augue. Fusce ultricies posuere nisi. Pellentesque nec turpis nisi. Nulla sodales feugiat arcu eget ultrices. Cras sem velit, maximus ut neque in, scelerisque cursus mauris. Pellentesque mauris lectus, congue non erat vel, dictum commodo diam. Cras sed augue nec ipsum convallis dignissim at et risus. Fusce condimentum placerat porttitor. Vestibulum ante ante, tincidunt at tristique eget, suscipit quis ipsum. Vivamus iaculis euismod libero id laoreet. Quisque leo felis, placerat sit amet placerat at, sodales in quam. Nunc vulputate, sapien id commodo fringilla, ex ante laoreet nunc, in mattis diam magna ut sapien. Pellentesque scelerisque tortor justo, ut venenatis nibh malesuada nec. Donec non commodo magna, sed posuere magna. Morbi imperdiet nisl non luctus rhoncus. Phasellus id mi sed tellus dignissim efficitur accumsan quis ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sed scelerisque tellus, a aliquam leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed dolor at augue vehicula rhoncus. Sed ultrices, quam eget faucibus placerat, nulla dui imperdiet urna, vel suscipit dui ex vitae quam. Maecenas magna ligula, vulputate sed purus nec, laoreet tempor massa. Ut eu purus vulputate, faucibus tellus sed, accumsan massa. Sed vestibulum eleifend risus, sed tempus sem varius at. Praesent viverra vel urna vel luctus. Morbi dui ipsum, semper vitae congue quis, vulputate id quam. Donec quis gravida purus.";
+        function greekingResume(data, greekWords) {
+            let greekObj = {
+                arr: greekWords.split(/[^A-Za-z]+/),
+                index: 0
+            };
+            function greekHelper(obj, greekObj) {
+                var newObj = {};
+                for (let property in obj) {
+    
+                    if (typeof(obj[property]) === "object") {
+                        newObj[property] = greekHelper(obj[property], greekObj);
+                    } else {
+                        newObj[property] = obj[property].replace(/[A-Za-z]+/g, (function() {
+                            return function(matching) {
+                                let greekWord = greekObj.arr[greekObj.index++ % greekObj.arr.length];
+                                if (matching[0].match(/[A-Z]/)) {
+                                    if (matching[1] && matching[1].match(/[A-Z]/)) {
+                                        greekWord = greekWord.toUpperCase();
+                                    } else {
+                                        greekWord = greekWord[0].toUpperCase() + greekWord.slice(1);
+                                    }
+                                }
+                                return greekWord;
+                            };
+                        }()));
+                    }
+                }
+                return newObj;
+            }
+            return greekHelper(data, greekObj);
+        }
+        let greekedResume = greekingResume(resume, greekWords);
+        var displayString = "";
+        function displayFromJson(jsonObj){
+            document.getElementById("personalInfo").innerHTML = jsonObj.personalInfo.firstName + " " + jsonObj.personalInfo.lastName;
+            document.getElementById("personalAddress").innerHTML = jsonObj.personalInfo.contactInfo.address.city + ", " + jsonObj.personalInfo.contactInfo.address.state +  " | " + jsonObj.personalInfo.contactInfo.phoneNumber + " | " + jsonObj.personalInfo.contactInfo.email;
+            document.getElementById("jsonDeg").innerHTML = jsonObj.education.degree;
+            document.getElementById("anticipatedGrad").innerHTML = "Anticipated Graduation Date: " + jsonObj.education.gradDate;
+            document.getElementById("uvuInfo").innerHTML = jsonObj.education.schoolInfo.school + ", " + jsonObj.education.schoolInfo.city + ", " + jsonObj.education.schoolInfo.state;
+            for (var key in jsonObj.education.schoolInfo.relatedCourses.programming){
+                if(key === jsonObj.education.schoolInfo.relatedCourses.programming.length - 1){
+                    displayString += jsonObj.education.schoolInfo.relatedCourses.programming[key];
+                }
+                else{
+                    displayString += jsonObj.education.schoolInfo.relatedCourses.programming[key] + ", ";
+                }
+            }
+            document.getElementById("programCourseWork").innerHTML = displayString;
+            displayString = "";
+            for(key in jsonObj.education.schoolInfo.relatedCourses.computerScience) {
+                if(key === jsonObj.education.schoolInfo.relatedCourses.computerScience.length - 1) {
+                    displayString += jsonObj.education.schoolInfo.relatedCourses.computerScience[key];
+                }
+                else{
+                    displayString += jsonObj.education.schoolInfo.relatedCourses.computerScience[key] + ", ";
+                }
+            }
+            document.getElementById("csCourseWork").innerHTML = displayString;
+            displayString = "";
+            for(key in jsonObj.skills){
+                for(var skill in jsonObj.skills[key].skillSet){
+                    displayString += "<li>" + jsonObj.skills[key].skillSet[skill] + "</li>";
+                }
+                let idString = jsonObj.skills[key].skillNumber;
+                document.getElementById(idString).innerHTML = displayString;
+                displayString = "";
+            }
+            for(key in jsonObj.experience){
+                document.getElementById(jsonObj.experience[key].companyNumber).innerHTML = jsonObj.experience[key].title + ", <em>" + jsonObj.experience[key].company + "</em>";
+                document.getElementById(jsonObj.experience[key].companyDate).innerHTML = jsonObj.experience[key].workStartDate + " - " + jsonObj.experience[key].workEndDate;
+                document.getElementById(jsonObj.experience[key].companyLoc).innerHTML = jsonObj.experience[key].location.city + ", " + jsonObj.experience[key].location.state;
+            }
+        }
+        function toggleVersion(){
+            if(normalVersion){
+                console.log("changing to greek!");
+                displayFromJson(greekedResume);
+                normalVersion = false;
+            }
+            else{
+                console.log("changing back to english!");
+                displayFromJson(resume);
+                normalVersion = true;
+            }
+        }
+    </script>
+    </body>
+</html>

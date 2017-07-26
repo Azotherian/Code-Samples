@@ -1,0 +1,113 @@
+{
+	"personalInfo": {
+		"firstName": "Lorem",
+		"lastName": "Ipsum",
+		"contactInfo": {
+			"address": {
+				"city": "dolor",
+				"state": "sit"
+			},
+			"phoneNumber": "amet",
+			"email": "azotherian@gmail.com"
+		}
+	},
+	"education": {
+		"degree": "consectetur adipiscing elit Mauris",
+		"gradDate": "sit amet",
+		"schoolInfo": {
+			"school": "luctus nisi Sed",
+			"city": "lacus",
+			"state": "massa",
+			"relatedCourses": {
+				"programming": [
+					"Fornare ut ante",
+					"nec ultricies ornare",
+					"lectus Nam in",
+					"eros leo Ut",
+					"sed ex eros Integer"
+				],
+				"computer Science": [
+					"commodo imperdiet",
+					"augue eget sodales Donec tortor quam",
+					"aliquet vel",
+					"ligula imperdiet ultrices gravida",
+					"est Etiam euismod",
+					"ante molestie",
+					"laoreet nunc non molestie
+				]
+			}
+		}
+	},
+	"skills": [{
+		"title": "lorem",
+		"skillSet": [
+			"Donec commodo lacinia lacus eleifend tincidunt Sed gravida nulla nec felis",
+			"ultrices sollicitudin Nunc in sodales sapien Mauris vel semper turpis vitae posuere quam Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Nunc condimentum felis ut",
+			"enim eleifend blandit Curabitur pretium vitae lacus et consequat Proin sit amet facilisis massa Quisque quis diam vel ex dictum lobortis Etiam maximus posuere risus nec fringilla turpis placerat"
+		]
+	}, 
+	{
+		"title": "et",
+		"skillSet": [
+			"Proin ultricies nulla felis eu porta enim viverra in Vestibulum ultricies facilisis leo id",
+			"finibus Nunc vel ligula mi Cras quis lacus enim Cras mi nulla rhoncus maximus elementum vel",
+			"viverra facilisis est Cras nulla tortor ornare sed nibh vel eleifend accumsan risus Praesent feugiat enim ut ante"
+		]
+	}, 
+	{
+		"title": "scelerisque",
+		"skillSet": [
+			"malesuada non non augue Aenean a aliquam dolor Phasellus maximus enim mauris",
+			"id efficitur justo mollis ac Etiam ligula tortor egestas ac nulla non efficitur molestie nunc Donec aliquam erat et suscipit",
+			"finibus neque leo vulputate neque et scelerisque augue felis ut nisl Sed ex velit euismod sed"
+		]
+	}, 
+	{
+		"title": "tincidunt eu ullamcorper",
+		"skillSet": [
+			"ut ex Aliquam dignissim placerat urna ac auctor Suspendisse velit lacus",
+			"vehicula quis vestibulum sed ornare sit amet odio Sed dui mi",
+			"vestibulum et quam non bibendum gravida mauris Aenean suscipit viverra quam Morbi"
+		]
+	}],
+	"experience": [{
+		"title": "congue elit",
+		"company": "ac ultricies",
+		"workStartDate": "condimentum libero",
+		"workEndDate": "augue",
+		"location": {
+			"city": "finibus",
+			"state": "lectus"
+		}
+	}, 
+	{
+		"title": "a condimentum",
+		"company": "dolor metus",
+		"workStartDate": "hendrerit nulla",
+		"workEndDate": "Interdum et",
+		"location": {
+			"city": "malesuada",
+			"state": "fames"
+		}
+	}, 
+	{
+		"title": "ac ante",
+		"company": "ipsum primis",
+		"workStartDate": "in faucibus",
+		"workEndDate": "Morbi non",
+		"location": {
+			"city": "dictum",
+			"state": "urna"
+		}
+	}, 
+	{
+		"title": "et faucibus",
+		"company": "nunc Interdum et",
+		"workStartDate": "malesuada fames",
+		"workEndDate": "ac ante",
+		"location": {
+			"city": "ipsum",
+			"state": "primis"
+		}
+	}]
+}

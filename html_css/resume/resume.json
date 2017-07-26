@@ -1,0 +1,113 @@
+{
+	"personalInfo": {
+		"firstName": "Nick",
+		"lastName": "Dow",
+		"contactInfo": {
+			"address": {
+				"city": "Orem",
+				"state": "UT"
+			},
+			"phoneNumber": "435-650-3282",
+			"email": "azotherian@gmail.com"
+		}
+	},
+	"education": {
+		"degree": "Bachelors of Computer Science",
+		"gradDate": "May 2018",
+		"schoolInfo": {
+			"school": "Utah Valley University",
+			"city": "Orem",
+			"state": "UT",
+			"relatedCourses": {
+				"programming": [
+					"Fundamentals of Programming",
+					"Object Oriented Programming",
+					" Operating Systems Theory",
+					"C++ Software Development",
+					"Patterns of Software Development"
+				],
+				"computerScience": [
+					"Discrete Structures",
+					"Introduction to Algorithms and Data Structures",
+					"Computer Networks",
+					"Computer Organization and Architecture",
+					"Introduction to Algorithms",
+					"Database Theory",
+					"Introduction to Computation Theory"
+				]
+			}
+		}
+	},
+	"skills": [{
+		"title": "Programming",
+		"skillSet": [
+			"Proficient with C++, C#, C. Familiar with Java, angularJS and HTML/CSS",
+			"Designed User Interface changes and applications using Java for a company's product, helped create software that uses an angularJS application to communicate and display data from a Jasper REST server",
+			"Designed a Virtual Machine that can use multithreading without the threading library, a Stack, a Graph, a Word  Counting program, and more that all fit to professors specifications"
+		]
+	}, 
+	{
+		"title": "Management",
+		"skillSet": [
+			"Supervise a team of nine employees: oversee daily tasks, shift assignments and area coverage",
+			"Coordinate between team members to increase productivity, identifying key strengths and abilities to match job tasks",
+			"Utilize time effectively to maintain a standard of duties, resulting in promotion to lead custodian over two buildings"
+		]
+	}, 
+	{
+		"title": "Communication",
+		"skillSet": [
+			"Communicated between team members and manager to ensure project was on track",
+			"Provide feedback between managers and employees to ensure a standards of cleaning, employee performance, and other general information or instructions",
+			"Increased employee productivity by effectively relaying instructions, resulting in extra time to focus on ancillary work"
+		]
+	}, 
+	{
+		"title": "Organization & Training",
+		"skillSet": [
+			"Complete tasks in a timely manner and resolve unexpected issues quickly",
+			"Trained others on how to effectively complete tasks to streamline workflow",
+			"Quickly learns a new skill and adapt easily to change and improvement"
+		]
+	}],
+	"experience": [{
+		"title": "Software Developer",
+		"company": "PerfectSearch Corp",
+		"workStartDate": "April 2016",
+		"workEndDate": "Present",
+		"location": {
+			"city": "Orem",
+			"state": "UT"
+		}
+	}, 
+	{
+		"title": "Software Developer",
+		"company": "SuperLumin Networks",
+		"workStartDate": "March 2015",
+		"workEndDate": "December 2015",
+		"location": {
+			"city": "Draper",
+			"state": "UT"
+		}
+	}, 
+	{
+		"title": "Sandwich Artist",
+		"company": "Subway UVU",
+		"workStartDate": "January 2015",
+		"workEndDate": "March 2015",
+		"location": {
+			"city": "Orem",
+			"state": "UT"
+		}
+	}, 
+	{
+		"title": "Lead Custodian",
+		"company": "Utah Valley University",
+		"workStartDate": "August 2011",
+		"workEndDate": "January 2015",
+		"location": {
+			"city": "Orem",
+			"state": "UT"
+		}
+	}]
+}

@@ -1,0 +1,39 @@
+.fontStyle{
+    font-family: Calibri;
+}
+.titleText{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.personalInfoAlign{
+    text-align: center;
+}
+.sectionHeading{
+    font-size: 25px;
+    font-weight: bold;
+}
+.emailColor{
+    color: #0000EE;
+}
+.textFloatRight{
+    float: right;
+}
+.listMargin{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.bulletFontSize{
+    font-size: 16px;
+    font-weight: bold;
+}
+.sectionTitleFont{
+    font-size: 17px;
+    font-weight: bold;
+}
+.secondBulletFont{
+    font-size: 13px;
+}
+.subSectionHeading{
+    font-weight: bold;
+}

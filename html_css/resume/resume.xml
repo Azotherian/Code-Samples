@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+    <header>
+        <firstName>Nick</firstName>
+        <lastName>Dow</lastName>
+        <contactInfo>
+            <address>
+                <city>Orem</city>
+                <state>UT</state>
+            </address>
+            <phone>435-650-3282</phone>
+            <email>azotherian@gmail.com</email>
+        </contactInfo>
+    </header>
+    <education>
+        <degree>Bachelors of Science in Computer Science</degree>
+        <gradDate>May 2018</gradDate>
+        <schoolInfo>
+            <school>Utah Valley University</school>
+            <city>Orem</city>
+            <state>UT</state>
+            <relatedCourses>
+                <class>Fundamentals of Programming</class>
+                <class>Object Oriented Programming</class>
+                <class>Discrete Structures</class>
+                <class>Introduction to Algorithms and Data Structures</class>
+                <class>Computer Networks</class>
+                <class>Computer Organization and Architecture</class>
+                <class>Operating Systems Theory, Software Engineering</class>
+                <class>Introduction to Algorithms</class>
+                <class>C++ Software Development</class>
+                <class>Database Theory</class>
+                <class>Patterns of Software Development</class>
+                <class>Introduction to Computation Theory</class>
+            </relatedCourses>
+        </schoolInfo>
+    </education>
+    <skills>
+        <skill>
+            <title>Programming</title>
+            <bullet>Proficient with C++, C#, C. Familiar with Java, angularJS 
+                    and HTML/CSS</bullet>
+            <bullet>Designed User Interface changes and applications using Java 
+                    for a company's product, helped create software that uses an
+                    angularJS application to communicate and display data from a
+                    Jasper REST server</bullet>
+            <bullet>Designed a Virtual Machine that can use multithreading
+                    without the threading library, a Stack, a Graph, a Word 
+                    Counting program, and more that all fit to professors 
+                    specifications</bullet>
+            <bullet>Evaluated peers programs to aid in the modification, 
+                    performance improvement, and overall quality of programs</bullet>
+        </skill>
+        <skill>
+            <title>Management</title>
+            <bullet>Supervise a team of nine employees: oversee daily tasks, 
+                    shift assignments and area coverage</bullet>
+            <bullet>Coordinate between team members to increase productivity, 
+                    identifying key strengths and abilities to match job tasks</bullet>
+            <bullet>Utilize time effectively to maintain a standard of duties, 
+                    resulting in promotion to lead custodian over two buildings</bullet>
+        </skill>
+        <skill>
+            <title>Communication</title>
+            <bullet>Communicated between team members and manager to ensure
+                    project was on track</bullet>
+            <bullet>Provide feedback between managers and employees to ensure a
+                    standards of cleaning, employee performance, and other 
+                    general information or instructions</bullet>
+            <bullet>Increased employee productivity by effectively relaying 
+                    instructions, resulting in extra time to focus on ancillary work</bullet>
+        </skill>
+        <skill>
+            <title>Organization and Training</title>
+            <bullet>Complete tasks in a timely manner and resolve unexpected 
+                    issues quickly</bullet>
+            <bullet>Trained others on how to effectively complete tasks to 
+                    streamline workflow</bullet>
+            <bullet>Quickly learns a new skill and adapt easily to change and improvement</bullet>
+        </skill>
+    </skills>
+    <experience>
+        <job>
+            <title>Software Developer Intern</title>
+            <company>PerfectSearch Corp.</company>
+            <workDateStart>April 2016</workDateStart>
+            <workDateEnd>Present</workDateEnd>
+            <location>
+                <city>Orem</city>
+                <state>UT</state>
+            </location>
+        </job>
+        <job>
+            <title>Software Developer</title>
+            <company>SuperLumin Networks</company>
+            <workDateStart>March 2015</workDateStart>
+            <workDateEnd>December 2015</workDateEnd>
+            <location>
+                <city>Draper</city>
+                <state>UT</state>
+            </location>
+        </job>
+        <job>
+            <title>Sandwhich Artist</title>
+            <company>Subway UVU</company>
+            <workDateStart>January 2015</workDateStart>
+            <workDateEnd>March 2015</workDateEnd>
+            <location>
+                <city>Orem</city>
+                <state>UT</state>
+            </location>
+        </job>
+        <job>
+            <title>Lead Custodian</title>
+            <company>Utah Valley University</company>
+            <workDateStart>August 2011</workDateStart>
+            <workDateEnd>January 2015</workDateEnd>
+            <location>
+                <city>Orem</city>
+                <state>UT</state>
+            </location>
+        </job>
+    </experience>
+</resume>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nick Dow's Resume</title>
+        <link rel="stylesheet" type="text/css" href="resume.css">
+    </head>
+    <body class="fontStyle">
+        <div class="titleText" onclick="showPersonalInfo()">Nick Dow</div>
+        <div id="personalInfo"></div>
+        <br>
+        <div class="sectionHeading" onclick="showEducation()">Education</div>
+        <div id="education"></div>
+        <div class="sectionHeading" onclick="showSkills()">Professional Skills</div>
+        <div id="skills"></div>
+        <div class="sectionHeading" onclick="showExperience()">Experience</div><div id="experience"></div>
+        <script>
+            var courseWorkOpen = false;
+            var programSkillsOpen = false;
+            var managementSkillsOpen = false;
+            var orgTrainSkillsOpen = false;
+            var experienceOpen = false;
+            var educationOpen = false;
+            var skillsOpen = false;
+            var personalInfoOpen = false;
+            function showCourseWork() {
+                if(courseWorkOpen === false){//if section is closed
+                    var courseWorkString = "<li><span class=\"subSectionHeading\">Programming:</span> Fundamentals of Programming, ObjectOriented Programming, Operating Systems\
+                                            Theory, C++ Software Development, Patterns of Software Development</li><li><span class=\"subSectionHeading\">Computer Science:</span> Discrete Structures,\
+                                            Introduction to Algorithms and Data Structures, Computer Networks, Computer Organization and Architecture, Introduction to Algorithms, Database Theory,\
+                                            Introduction to Computation Theory</li>";
+                    document.getElementById("courseWork").innerHTML = courseWorkString;
+                    courseWorkOpen = true;
+                }
+                else{
+                    document.getElementById("courseWork").innerHTML = "";
+                    courseWorkOpen = false;
+                }
+            }
+            function showProgramSkills(){
+                if(programSkillsOpen === false){
+                    var programString = "<li>Proficient with C++, C#, C. Familiar with Java, angularJS and CSS</li> <li>Designed User Interface \
+                                         changes and applications using Java for a company's product, helped create software that uses an angularJS  application to communicate and display data from a\
+                                         Jasper REST server</li> <li>Designed a Virtual Machine that can use multithreading without the threading library, a Stack, a Graph, a Word Counting program, \
+                                         and more that all fit to professors specifications</li> <li>Evaluated peers programs to aid in the modification, performance improvement, and overall quality of programs</li>";
+                    document.getElementById("programSkills").innerHTML = programString;
+                    programSkillsOpen = true;
+                }
+                else{
+                    document.getElementById("programSkills").innerHTML = "";
+                    programSkillsOpen = false;
+                }
+            }
+            function showManagementSkills(){
+                if(managementSkillsOpen === false){
+                    var managementString = "<li>Communicated between team members and manager to ensure project was on track</li> <li>Provide\
+                                            feedback between managers and employees to ensure a standards of cleaning, employee performance, and other general information or instructions</li> \
+                                            <li>Increased employee productivity by effectively relaying instructions, resulting in extra time to focus on ancillary work</li>";
+                    document.getElementById("managementSkills").innerHTML = managementString;
+                    managementSkillsOpen = true;
+                }
+                else{
+                    document.getElementById("managementSkills").innerHTML = "";
+                    managementSkillsOpen = false;
+                }
+            }
+            function showOrgTrainSkills(){
+                if(orgTrainSkillsOpen === false){
+                    var orgTrainString = "<li>Complete tasks in a timely manner and resolve unexpected issues quickly</li>\
+                                          <li>Trained others on how to effectively complete tasks to streamline workflow</li><li>Quickly learns a new skill and adapt easily to change and improvement</li>";
+                    document.getElementById("orgTrainSkills").innerHTML = orgTrainString;
+                    orgTrainSkillsOpen = true;
+                }
+                else{
+                    document.getElementById("orgTrainSkills").innerHTML = "";
+                    orgTrainSkillsOpen = false;
+                }
+            }
+            function showExperience(){
+                if(experienceOpen === false){
+                    var experienceString = "<div><span class=\"sectionTitleFont\">Software Developer, <em>PerfectSearch Corp</em></span><span class=\"textFloatRight\">April 2016 - Present</span></div>\
+                                            <div>Orem, UT</div><br><div><span class=\"sectionTitleFont\">Software Developer, <em>SuperLumin Networks</em></span><span class=\"textFloatRight\">March 2016 - December 2015</span></div>\
+                                            <div>Draper, UT</div><br><div><span class=\"sectionTitleFont\">Sandwich Artist, <em>Subway, Utah Valley University</em></span><span class=\"textFloatRight\">January 2015 - March 2015</span></div>\
+                                            <div>Orem, UT</div><br><div><span class=\"sectionTitleFont\">Custodian, <em>Utah Valley University</em></span><span class=\"textFloatRight\"> August 2011 - January 2015</span></div>\
+                                            <div>Orem, UT</div>";
+                    document.getElementById("experience").innerHTML = experienceString;
+                    experienceOpen = true;
+                }
+                else{
+                    document.getElementById("experience").innerHTML = "";
+                    experienceOpen = false;
+                }
+            }
+            function showEducation(){
+                if(educationOpen === false){
+                    var educationString = "<div><span class=\"sectionTitleFont\">Bachelors of Science in Computer Science</span><span class=\"textFloatRight\">Anticipated Graduation: May 2018</span></div>\
+                                          <div>Utah Valley University, Orem, UT</div><div><ul class=\"listMargin\"><li><span class=\"bulletFontSize\" onclick=\"showCourseWork()\">Related Coursework:</span><ul class=\"secondBulletFont\" id=\"courseWork\">\
+                                          </ul></li></ul></div>";
+                    document.getElementById("education").innerHTML = educationString;
+                    educationOpen = true;
+                }
+                else{
+                    document.getElementById("education").innerHTML = "";
+                    educationOpen = false;
+                }
+            }
+            function showSkills(){
+                if(skillsOpen === false){
+                    var skillsString = "<div><span class=\"sectionTitleFont\" onclick=\"showProgramSkills()\">Programming</span></div><div><ul class=\"listMargin secondBulletFont\" id=\"programSkills\"></ul>\
+                                        </div><div><span class=\"sectionTitleFont\" onclick=\"showManagementSkills()\">Management</span></div><div><ul class=\"listMargin secondBulletFont\" id=\"managementSkills\"></ul>\
+                                        </div><div><span class=\"sectionTitleFont\" onclick=\"showOrgTrainSkills()\">Organization and Training</span><div><div><ul class=\"listMargin secondBulletFont\" id=\"orgTrainSkills\"></ul>\
+                                        </div>";
+                    document.getElementById("skills").innerHTML = skillsString;
+                    skillsOpen = true;
+                }
+                else{
+                    document.getElementById("skills").innerHTML = "";
+                    skillsOpen = false;
+                }
+            }
+            function showPersonalInfo(){
+                if(personalInfoOpen === false){
+                    var personalInfoString = "<div class=\"personalInfoAlign\">Orem, UT | 435-650-3282 | <span class=\"emailColor\">azotherian@gmail.com</span></div>";
+                    document.getElementById("personalInfo").innerHTML = personalInfoString;
+                    personalInfoOpen = true;
+                }
+                else{
+                    document.getElementById("personalInfo").innerHTML = "";
+                    personalInfoOpen = false;
+                }
+            }
+        </script>
+    </body>
+</html>

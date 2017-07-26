@@ -1,0 +1,24 @@
+.centerText{
+    text-align: center;
+}
+.emailText{
+    color: #0000EE; 
+    text-decoration: underline;
+}
+.textFloatRight{
+    float: right;
+}
+.bulletFontSize{
+    font-size: 16px;
+    font-weight: bold;
+    color: #4c7123;
+}
+.sectionTitleFont{
+    font-size: 17px;
+    font-weight: bold;
+    color: #4c7123;
+}
+.boldText{
+    font-weight: bold;
+    color: #4c7123;
+}
