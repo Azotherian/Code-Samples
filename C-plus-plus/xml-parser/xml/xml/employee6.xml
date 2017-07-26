@@ -1,0 +1,27 @@
+<Employee>
+    <salary>40000</salary>
+    <name>John Doe</name>
+    <id>1234</id>
+    <address>2230 W. Treeline Dr.</address>
+    <city>Tucson</city>
+    <state>Arizona</state>
+    <country>USA</country>
+    <phone>520-742-2448</phone>
+    <city>Tucson</city>
+</Employee>
+<Employee>
+    <salary>60000</salary>
+    <name>Jane Doe</name>
+    <id>4321</id>
+</Employee>
+<Employee>
+    <salary>140000</salary>
+    <state>Michigan</state>
+    <name>Jack Dough</name>
+    <id>12345</id>
+    <city>Dearborn</city>
+    <country>USA</country>
+    <phone>303-427-0153</phone>
+    <address>24437 Princeton</address>
+</Employee>
+
