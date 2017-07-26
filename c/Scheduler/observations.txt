@@ -1,0 +1,20 @@
+I was confused at first as to how I was really going to get this project started, but after some clarification in class on Thursday (June 19th), I was able to really sit down and work this one out.
+I had to eventually create a gaant chart to help me understand what my program was doing as I was working on it. Using the sample times in the page for the project, I was able to verify that each
+schedule was working properly.
+
+The first scheduler I worked on was First Come First Serve since it seemed the easiest to comprehend. I used project 3 as a template, since it was almost the same ideas as we were working with,
+and I modified it after that to fit this project. The few things I learned that I had to keep track of with this algorithm are:
+	How much time has passed
+	How long each process has to wait to being
+	and the turnaround time
+Once I had learned how to keep trakc of those, the algorithm was easier to code and finish
+
+The second scheduler I worked on was the Shortest Job First since most of the idea was still based on the shortest track next algorith for searching, and it wasn't much to change. The one thing
+I decided to do to make it easier to work with was to create 3 separate arrays as temporary to mess with the data and re-arrange it. I used another function to find the first occurance where
+the arrival time of the process was greater than the current time. Once that was found, I used another loop to cycle through and found the shortest process time left, I then switched it to be
+the next process to bu run. After all but one were done, I just ran a First Come First Serve code to process the last entry.
+
+The final scheduler I worked on was the Shortest Run Time Next. This one was the hardest of the three to code in my opinion. I realized I had to keep track of each array elements data at the
+same time, since they would be constantly changing. I created some more arrays to keep track of remaining time, turnaround time and wait time. As the milliseconds counted down, I decremented the
+remaining time accordingly, and checked each process to see if there was one that had lower time than the one currently running. I did this until each process had a remaining time of 0 ms. When a
+process reached 0, I recorded the wait time and turnaround time. Then, I just printed out the average times.
